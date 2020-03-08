@@ -1,0 +1,988 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A10678A241CDA3B00844681 /* WishlistTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A106788241CDA3B00844681 /* WishlistTabRoute.swift */; };
+		6A10678B241CDA3B00844681 /* ShopTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A106789241CDA3B00844681 /* ShopTabRoute.swift */; };
+		6A61168224136AE30099C25F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61168124136AE30099C25F /* AppDelegate.swift */; };
+		6A61168424136AE30099C25F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61168324136AE30099C25F /* SceneDelegate.swift */; };
+		6A61168624136AE30099C25F /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61168524136AE30099C25F /* ShopViewController.swift */; };
+		6A61168D24136AE50099C25F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A61168C24136AE50099C25F /* Assets.xcassets */; };
+		6A61169024136AE50099C25F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A61168E24136AE50099C25F /* LaunchScreen.storyboard */; };
+		6A61169B24136AE50099C25F /* RoutingExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61169A24136AE50099C25F /* RoutingExampleTests.swift */; };
+		6A6116A624136C5C0099C25F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116A524136C5C0099C25F /* MainTabBarController.swift */; };
+		6A6116A824136EF30099C25F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116A724136EF30099C25F /* LoginViewController.swift */; };
+		6A6116AA24136EFE0099C25F /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116A924136EFE0099C25F /* ProductViewController.swift */; };
+		6A6116AC24136F1B0099C25F /* ForgottenPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116AB24136F1B0099C25F /* ForgottenPasswordViewController.swift */; };
+		6A6116AE24136F3B0099C25F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116AD24136F3B0099C25F /* SignUpViewController.swift */; };
+		6A6116B024136F470099C25F /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116AF24136F470099C25F /* PopUpViewController.swift */; };
+		6A6116B924136FFD0099C25F /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116B824136FFD0099C25F /* WishlistViewController.swift */; };
+		6A6116BD241372270099C25F /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116BC241372270099C25F /* LayoutHelper.swift */; };
+		6A6116BF241372C70099C25F /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116BE241372C70099C25F /* DefaultButton.swift */; };
+		6AD8D56A2413848700889F2D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5612413848700889F2D /* Router.swift */; };
+		6AD8D56B2413848700889F2D /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5632413848700889F2D /* ModalTransition.swift */; };
+		6AD8D56C2413848700889F2D /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5642413848700889F2D /* Transition.swift */; };
+		6AD8D56D2413848700889F2D /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5652413848700889F2D /* PushTransition.swift */; };
+		6AD8D5722413853B00889F2D /* SignUpRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5702413853A00889F2D /* SignUpRoute.swift */; };
+		6AD8D5732413853B00889F2D /* LoginRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5712413853B00889F2D /* LoginRoute.swift */; };
+		6AD8D5752413B16300889F2D /* ForgottenPasswordRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5742413B16300889F2D /* ForgottenPasswordRoute.swift */; };
+		6AD8D5772413B24000889F2D /* PopUpRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5762413B24000889F2D /* PopUpRoute.swift */; };
+		6AD8D5792413B81C00889F2D /* ProductRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5782413B81C00889F2D /* ProductRoute.swift */; };
+		6AD8D57C2413D33D00889F2D /* DefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D57B2413D33D00889F2D /* DefaultRouter.swift */; };
+		6AD8D57E2413D55300889F2D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D57D2413D55300889F2D /* LoginViewModel.swift */; };
+		6AD8D5802413D55F00889F2D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D57F2413D55F00889F2D /* SignUpViewModel.swift */; };
+		6AD8D5822413D56C00889F2D /* ForgottenPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5812413D56C00889F2D /* ForgottenPasswordViewModel.swift */; };
+		6AD8D5842413D72400889F2D /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5832413D72400889F2D /* ShopViewModel.swift */; };
+		6AD8D5862413D73B00889F2D /* WishlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5852413D73B00889F2D /* WishlistViewModel.swift */; };
+		6AD8D5882413D83900889F2D /* PopUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5872413D83900889F2D /* PopUpViewModel.swift */; };
+		6AD8D58A2413D8C800889F2D /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5892413D8C800889F2D /* ProductViewModel.swift */; };
+		6AD8D58C2413DF3500889F2D /* EmptyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D58B2413DF3500889F2D /* EmptyTransition.swift */; };
+		6AD8D5902413EE8600889F2D /* AnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D58F2413EE8600889F2D /* AnimatedTransition.swift */; };
+		6AD8D5932413EF0700889F2D /* FadeAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5922413EF0700889F2D /* FadeAnimatedTransitioning.swift */; };
+		6AD8D5952413F04D00889F2D /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5942413F04D00889F2D /* AnimatedTransitioning.swift */; };
+		6AD8D5972413F5E900889F2D /* SiriRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5962413F5E900889F2D /* SiriRouter.swift */; };
+		6AD8D5992413F7AA00889F2D /* SiriRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5982413F7AA00889F2D /* SiriRoute.swift */; };
+		6AD8D5A124146A0F00889F2D /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5A024146A0F00889F2D /* IntentHandler.swift */; };
+		6AD8D5AA24146A0F00889F2D /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD8D5A924146A0F00889F2D /* IntentsUI.framework */; };
+		6AD8D5AD24146A0F00889F2D /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5AC24146A0F00889F2D /* IntentViewController.swift */; };
+		6AD8D5B024146A0F00889F2D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD8D5AE24146A0F00889F2D /* MainInterface.storyboard */; };
+		6AD8D5B424146A0F00889F2D /* AddToWishlistIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6AD8D5A724146A0F00889F2D /* AddToWishlistIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6AD8D5B724146A0F00889F2D /* AddToWishlistIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6AD8D59E24146A0F00889F2D /* AddToWishlistIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6AD8D5C124146A7A00889F2D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5C024146A7A00889F2D /* Intents.intentdefinition */; };
+		6AD8D5C224146A8100889F2D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5C024146A7A00889F2D /* Intents.intentdefinition */; };
+		6AD8D5C324146A8200889F2D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5C024146A7A00889F2D /* Intents.intentdefinition */; };
+		6AD8D5C524146CC300889F2D /* AddToWishlistIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5C424146CC300889F2D /* AddToWishlistIntentHandler.swift */; };
+		6AD8D5C624146CC300889F2D /* AddToWishlistIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5C424146CC300889F2D /* AddToWishlistIntentHandler.swift */; };
+		6AD8D5C82414BBAE00889F2D /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5C72414BBAE00889F2D /* UIViewController.swift */; };
+		6AD8D5CA2414C2BC00889F2D /* DeeplinkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5C92414C2BC00889F2D /* DeeplinkRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A61169724136AE50099C25F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A61167624136AE30099C25F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A61167D24136AE30099C25F;
+			remoteInfo = RoutingExample;
+		};
+		6AD8D5B224146A0F00889F2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A61167624136AE30099C25F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AD8D5A624146A0F00889F2D;
+			remoteInfo = AddToWishlistIntentUI;
+		};
+		6AD8D5B524146A0F00889F2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A61167624136AE30099C25F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AD8D59D24146A0F00889F2D;
+			remoteInfo = AddToWishlistIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6AD8D5BE24146A0F00889F2D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6AD8D5B724146A0F00889F2D /* AddToWishlistIntent.appex in Embed App Extensions */,
+				6AD8D5B424146A0F00889F2D /* AddToWishlistIntentUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6A106788241CDA3B00844681 /* WishlistTabRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistTabRoute.swift; sourceTree = "<group>"; };
+		6A106789241CDA3B00844681 /* ShopTabRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopTabRoute.swift; sourceTree = "<group>"; };
+		6A61167E24136AE30099C25F /* RoutingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoutingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A61168124136AE30099C25F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A61168324136AE30099C25F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6A61168524136AE30099C25F /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		6A61168C24136AE50099C25F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A61168F24136AE50099C25F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A61169124136AE50099C25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A61169624136AE50099C25F /* RoutingExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A61169A24136AE50099C25F /* RoutingExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingExampleTests.swift; sourceTree = "<group>"; };
+		6A61169C24136AE50099C25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A6116A524136C5C0099C25F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		6A6116A724136EF30099C25F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6A6116A924136EFE0099C25F /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		6A6116AB24136F1B0099C25F /* ForgottenPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenPasswordViewController.swift; sourceTree = "<group>"; };
+		6A6116AD24136F3B0099C25F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6A6116AF24136F470099C25F /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		6A6116B824136FFD0099C25F /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
+		6A6116BC241372270099C25F /* LayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutHelper.swift; sourceTree = "<group>"; };
+		6A6116BE241372C70099C25F /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		6AD8D5612413848700889F2D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		6AD8D5632413848700889F2D /* ModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		6AD8D5642413848700889F2D /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		6AD8D5652413848700889F2D /* PushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		6AD8D5702413853A00889F2D /* SignUpRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpRoute.swift; sourceTree = "<group>"; };
+		6AD8D5712413853B00889F2D /* LoginRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
+		6AD8D5742413B16300889F2D /* ForgottenPasswordRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenPasswordRoute.swift; sourceTree = "<group>"; };
+		6AD8D5762413B24000889F2D /* PopUpRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpRoute.swift; sourceTree = "<group>"; };
+		6AD8D5782413B81C00889F2D /* ProductRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRoute.swift; sourceTree = "<group>"; };
+		6AD8D57B2413D33D00889F2D /* DefaultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRouter.swift; sourceTree = "<group>"; };
+		6AD8D57D2413D55300889F2D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6AD8D57F2413D55F00889F2D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		6AD8D5812413D56C00889F2D /* ForgottenPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenPasswordViewModel.swift; sourceTree = "<group>"; };
+		6AD8D5832413D72400889F2D /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
+		6AD8D5852413D73B00889F2D /* WishlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewModel.swift; sourceTree = "<group>"; };
+		6AD8D5872413D83900889F2D /* PopUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewModel.swift; sourceTree = "<group>"; };
+		6AD8D5892413D8C800889F2D /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		6AD8D58B2413DF3500889F2D /* EmptyTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTransition.swift; sourceTree = "<group>"; };
+		6AD8D58F2413EE8600889F2D /* AnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransition.swift; sourceTree = "<group>"; };
+		6AD8D5922413EF0700889F2D /* FadeAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		6AD8D5942413F04D00889F2D /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
+		6AD8D5962413F5E900889F2D /* SiriRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriRouter.swift; sourceTree = "<group>"; };
+		6AD8D5982413F7AA00889F2D /* SiriRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriRoute.swift; sourceTree = "<group>"; };
+		6AD8D59E24146A0F00889F2D /* AddToWishlistIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AddToWishlistIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AD8D5A024146A0F00889F2D /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		6AD8D5A224146A0F00889F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AD8D5A724146A0F00889F2D /* AddToWishlistIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AddToWishlistIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AD8D5A924146A0F00889F2D /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		6AD8D5AC24146A0F00889F2D /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		6AD8D5AF24146A0F00889F2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6AD8D5B124146A0F00889F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AD8D5C024146A7A00889F2D /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		6AD8D5C424146CC300889F2D /* AddToWishlistIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToWishlistIntentHandler.swift; sourceTree = "<group>"; };
+		6AD8D5C72414BBAE00889F2D /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		6AD8D5C92414C2BC00889F2D /* DeeplinkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A61167B24136AE30099C25F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A61169324136AE50099C25F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD8D59B24146A0F00889F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD8D5A424146A0F00889F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD8D5AA24146A0F00889F2D /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A106787241CDA3B00844681 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				6A106788241CDA3B00844681 /* WishlistTabRoute.swift */,
+				6A106789241CDA3B00844681 /* ShopTabRoute.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		6A61167524136AE30099C25F = {
+			isa = PBXGroup;
+			children = (
+				6A61168024136AE30099C25F /* RoutingExample */,
+				6A61169924136AE50099C25F /* RoutingExampleTests */,
+				6AD8D59F24146A0F00889F2D /* AddToWishlistIntent */,
+				6AD8D5AB24146A0F00889F2D /* AddToWishlistIntentUI */,
+				6AD8D5A824146A0F00889F2D /* Frameworks */,
+				6A61167F24136AE30099C25F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A61167F24136AE30099C25F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A61167E24136AE30099C25F /* RoutingExample.app */,
+				6A61169624136AE50099C25F /* RoutingExampleTests.xctest */,
+				6AD8D59E24146A0F00889F2D /* AddToWishlistIntent.appex */,
+				6AD8D5A724146A0F00889F2D /* AddToWishlistIntentUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A61168024136AE30099C25F /* RoutingExample */ = {
+			isa = PBXGroup;
+			children = (
+				6A61169124136AE50099C25F /* Info.plist */,
+				6A61168124136AE30099C25F /* AppDelegate.swift */,
+				6A61168324136AE30099C25F /* SceneDelegate.swift */,
+				6A61168C24136AE50099C25F /* Assets.xcassets */,
+				6A61168E24136AE50099C25F /* LaunchScreen.storyboard */,
+				6A6116B124136F6C0099C25F /* Authentication */,
+				6A6116B224136F7B0099C25F /* PopUps */,
+				6A6116B324136F840099C25F /* Product */,
+				6AD8D55F2413848700889F2D /* Routing */,
+				6A6116BA2413701E0099C25F /* Tabs */,
+				6A6116BB2413721C0099C25F /* Utils */,
+			);
+			path = RoutingExample;
+			sourceTree = "<group>";
+		};
+		6A61169924136AE50099C25F /* RoutingExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A61169A24136AE50099C25F /* RoutingExampleTests.swift */,
+				6A61169C24136AE50099C25F /* Info.plist */,
+			);
+			path = RoutingExampleTests;
+			sourceTree = "<group>";
+		};
+		6A6116B124136F6C0099C25F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6A6116AB24136F1B0099C25F /* ForgottenPasswordViewController.swift */,
+				6AD8D5812413D56C00889F2D /* ForgottenPasswordViewModel.swift */,
+				6A6116A724136EF30099C25F /* LoginViewController.swift */,
+				6AD8D57D2413D55300889F2D /* LoginViewModel.swift */,
+				6A6116AD24136F3B0099C25F /* SignUpViewController.swift */,
+				6AD8D57F2413D55F00889F2D /* SignUpViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6A6116B224136F7B0099C25F /* PopUps */ = {
+			isa = PBXGroup;
+			children = (
+				6A6116AF24136F470099C25F /* PopUpViewController.swift */,
+				6AD8D5872413D83900889F2D /* PopUpViewModel.swift */,
+			);
+			path = PopUps;
+			sourceTree = "<group>";
+		};
+		6A6116B324136F840099C25F /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				6A6116A924136EFE0099C25F /* ProductViewController.swift */,
+				6AD8D5892413D8C800889F2D /* ProductViewModel.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		6A6116BA2413701E0099C25F /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				6A6116A524136C5C0099C25F /* MainTabBarController.swift */,
+				6A61168524136AE30099C25F /* ShopViewController.swift */,
+				6AD8D5832413D72400889F2D /* ShopViewModel.swift */,
+				6A6116B824136FFD0099C25F /* WishlistViewController.swift */,
+				6AD8D5852413D73B00889F2D /* WishlistViewModel.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		6A6116BB2413721C0099C25F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6A6116BE241372C70099C25F /* DefaultButton.swift */,
+				6A6116BC241372270099C25F /* LayoutHelper.swift */,
+				6AD8D5C72414BBAE00889F2D /* UIViewController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6AD8D55F2413848700889F2D /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				6AD8D5612413848700889F2D /* Router.swift */,
+				6AD8D5912413EEAB00889F2D /* Animator */,
+				6AD8D57A2413D32B00889F2D /* Routers */,
+				6AD8D5662413848700889F2D /* Routes */,
+				6AD8D5622413848700889F2D /* Transitions */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		6AD8D5622413848700889F2D /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				6AD8D58F2413EE8600889F2D /* AnimatedTransition.swift */,
+				6AD8D58B2413DF3500889F2D /* EmptyTransition.swift */,
+				6AD8D5632413848700889F2D /* ModalTransition.swift */,
+				6AD8D5652413848700889F2D /* PushTransition.swift */,
+				6AD8D5642413848700889F2D /* Transition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		6AD8D5662413848700889F2D /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				6AD8D5742413B16300889F2D /* ForgottenPasswordRoute.swift */,
+				6AD8D5712413853B00889F2D /* LoginRoute.swift */,
+				6AD8D5762413B24000889F2D /* PopUpRoute.swift */,
+				6AD8D5782413B81C00889F2D /* ProductRoute.swift */,
+				6AD8D5702413853A00889F2D /* SignUpRoute.swift */,
+				6AD8D5982413F7AA00889F2D /* SiriRoute.swift */,
+				6A106787241CDA3B00844681 /* Tabs */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		6AD8D57A2413D32B00889F2D /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				6AD8D5C92414C2BC00889F2D /* DeeplinkRouter.swift */,
+				6AD8D57B2413D33D00889F2D /* DefaultRouter.swift */,
+				6AD8D5962413F5E900889F2D /* SiriRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		6AD8D5912413EEAB00889F2D /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				6AD8D5942413F04D00889F2D /* AnimatedTransitioning.swift */,
+				6AD8D5922413EF0700889F2D /* FadeAnimatedTransitioning.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		6AD8D59F24146A0F00889F2D /* AddToWishlistIntent */ = {
+			isa = PBXGroup;
+			children = (
+				6AD8D5C024146A7A00889F2D /* Intents.intentdefinition */,
+				6AD8D5A224146A0F00889F2D /* Info.plist */,
+				6AD8D5C424146CC300889F2D /* AddToWishlistIntentHandler.swift */,
+				6AD8D5A024146A0F00889F2D /* IntentHandler.swift */,
+			);
+			path = AddToWishlistIntent;
+			sourceTree = "<group>";
+		};
+		6AD8D5A824146A0F00889F2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AD8D5A924146A0F00889F2D /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AD8D5AB24146A0F00889F2D /* AddToWishlistIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				6AD8D5AC24146A0F00889F2D /* IntentViewController.swift */,
+				6AD8D5AE24146A0F00889F2D /* MainInterface.storyboard */,
+				6AD8D5B124146A0F00889F2D /* Info.plist */,
+			);
+			path = AddToWishlistIntentUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A61167D24136AE30099C25F /* RoutingExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A61169F24136AE50099C25F /* Build configuration list for PBXNativeTarget "RoutingExample" */;
+			buildPhases = (
+				6A61167A24136AE30099C25F /* Sources */,
+				6A61167B24136AE30099C25F /* Frameworks */,
+				6A61167C24136AE30099C25F /* Resources */,
+				6AD8D5BE24146A0F00889F2D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AD8D5B324146A0F00889F2D /* PBXTargetDependency */,
+				6AD8D5B624146A0F00889F2D /* PBXTargetDependency */,
+			);
+			name = RoutingExample;
+			productName = RoutingExample;
+			productReference = 6A61167E24136AE30099C25F /* RoutingExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A61169524136AE50099C25F /* RoutingExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A6116A224136AE50099C25F /* Build configuration list for PBXNativeTarget "RoutingExampleTests" */;
+			buildPhases = (
+				6A61169224136AE50099C25F /* Sources */,
+				6A61169324136AE50099C25F /* Frameworks */,
+				6A61169424136AE50099C25F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A61169824136AE50099C25F /* PBXTargetDependency */,
+			);
+			name = RoutingExampleTests;
+			productName = RoutingExampleTests;
+			productReference = 6A61169624136AE50099C25F /* RoutingExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6AD8D59D24146A0F00889F2D /* AddToWishlistIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AD8D5BB24146A0F00889F2D /* Build configuration list for PBXNativeTarget "AddToWishlistIntent" */;
+			buildPhases = (
+				6AD8D59A24146A0F00889F2D /* Sources */,
+				6AD8D59B24146A0F00889F2D /* Frameworks */,
+				6AD8D59C24146A0F00889F2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AddToWishlistIntent;
+			productName = AddToWishlistIntent;
+			productReference = 6AD8D59E24146A0F00889F2D /* AddToWishlistIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6AD8D5A624146A0F00889F2D /* AddToWishlistIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AD8D5B824146A0F00889F2D /* Build configuration list for PBXNativeTarget "AddToWishlistIntentUI" */;
+			buildPhases = (
+				6AD8D5A324146A0F00889F2D /* Sources */,
+				6AD8D5A424146A0F00889F2D /* Frameworks */,
+				6AD8D5A524146A0F00889F2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AddToWishlistIntentUI;
+			productName = AddToWishlistIntentUI;
+			productReference = 6AD8D5A724146A0F00889F2D /* AddToWishlistIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A61167624136AE30099C25F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Cassius Pacheco";
+				TargetAttributes = {
+					6A61167D24136AE30099C25F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					6A61169524136AE50099C25F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 6A61167D24136AE30099C25F;
+					};
+					6AD8D59D24146A0F00889F2D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					6AD8D5A624146A0F00889F2D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6A61167924136AE30099C25F /* Build configuration list for PBXProject "RoutingExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A61167524136AE30099C25F;
+			productRefGroup = 6A61167F24136AE30099C25F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A61167D24136AE30099C25F /* RoutingExample */,
+				6A61169524136AE50099C25F /* RoutingExampleTests */,
+				6AD8D59D24146A0F00889F2D /* AddToWishlistIntent */,
+				6AD8D5A624146A0F00889F2D /* AddToWishlistIntentUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A61167C24136AE30099C25F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A61169024136AE50099C25F /* LaunchScreen.storyboard in Resources */,
+				6A61168D24136AE50099C25F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A61169424136AE50099C25F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD8D59C24146A0F00889F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD8D5A524146A0F00889F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD8D5B024146A0F00889F2D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A61167A24136AE30099C25F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD8D57E2413D55300889F2D /* LoginViewModel.swift in Sources */,
+				6A6116A824136EF30099C25F /* LoginViewController.swift in Sources */,
+				6AD8D5972413F5E900889F2D /* SiriRouter.swift in Sources */,
+				6AD8D58C2413DF3500889F2D /* EmptyTransition.swift in Sources */,
+				6A6116AC24136F1B0099C25F /* ForgottenPasswordViewController.swift in Sources */,
+				6AD8D5CA2414C2BC00889F2D /* DeeplinkRouter.swift in Sources */,
+				6AD8D58A2413D8C800889F2D /* ProductViewModel.swift in Sources */,
+				6A61168624136AE30099C25F /* ShopViewController.swift in Sources */,
+				6AD8D5722413853B00889F2D /* SignUpRoute.swift in Sources */,
+				6AD8D57C2413D33D00889F2D /* DefaultRouter.swift in Sources */,
+				6AD8D5732413853B00889F2D /* LoginRoute.swift in Sources */,
+				6AD8D56B2413848700889F2D /* ModalTransition.swift in Sources */,
+				6A6116AA24136EFE0099C25F /* ProductViewController.swift in Sources */,
+				6AD8D5952413F04D00889F2D /* AnimatedTransitioning.swift in Sources */,
+				6A6116B024136F470099C25F /* PopUpViewController.swift in Sources */,
+				6AD8D5C524146CC300889F2D /* AddToWishlistIntentHandler.swift in Sources */,
+				6AD8D5802413D55F00889F2D /* SignUpViewModel.swift in Sources */,
+				6AD8D56C2413848700889F2D /* Transition.swift in Sources */,
+				6A6116A624136C5C0099C25F /* MainTabBarController.swift in Sources */,
+				6A6116BD241372270099C25F /* LayoutHelper.swift in Sources */,
+				6AD8D5862413D73B00889F2D /* WishlistViewModel.swift in Sources */,
+				6AD8D56D2413848700889F2D /* PushTransition.swift in Sources */,
+				6A10678A241CDA3B00844681 /* WishlistTabRoute.swift in Sources */,
+				6AD8D5992413F7AA00889F2D /* SiriRoute.swift in Sources */,
+				6AD8D5C82414BBAE00889F2D /* UIViewController.swift in Sources */,
+				6AD8D5752413B16300889F2D /* ForgottenPasswordRoute.swift in Sources */,
+				6A6116AE24136F3B0099C25F /* SignUpViewController.swift in Sources */,
+				6AD8D5822413D56C00889F2D /* ForgottenPasswordViewModel.swift in Sources */,
+				6A6116B924136FFD0099C25F /* WishlistViewController.swift in Sources */,
+				6AD8D5932413EF0700889F2D /* FadeAnimatedTransitioning.swift in Sources */,
+				6AD8D5902413EE8600889F2D /* AnimatedTransition.swift in Sources */,
+				6AD8D56A2413848700889F2D /* Router.swift in Sources */,
+				6AD8D5842413D72400889F2D /* ShopViewModel.swift in Sources */,
+				6A61168224136AE30099C25F /* AppDelegate.swift in Sources */,
+				6AD8D5C124146A7A00889F2D /* Intents.intentdefinition in Sources */,
+				6AD8D5882413D83900889F2D /* PopUpViewModel.swift in Sources */,
+				6A61168424136AE30099C25F /* SceneDelegate.swift in Sources */,
+				6AD8D5772413B24000889F2D /* PopUpRoute.swift in Sources */,
+				6A10678B241CDA3B00844681 /* ShopTabRoute.swift in Sources */,
+				6A6116BF241372C70099C25F /* DefaultButton.swift in Sources */,
+				6AD8D5792413B81C00889F2D /* ProductRoute.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A61169224136AE50099C25F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A61169B24136AE50099C25F /* RoutingExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD8D59A24146A0F00889F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD8D5C624146CC300889F2D /* AddToWishlistIntentHandler.swift in Sources */,
+				6AD8D5C224146A8100889F2D /* Intents.intentdefinition in Sources */,
+				6AD8D5A124146A0F00889F2D /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD8D5A324146A0F00889F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD8D5C324146A8200889F2D /* Intents.intentdefinition in Sources */,
+				6AD8D5AD24146A0F00889F2D /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A61169824136AE50099C25F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A61167D24136AE30099C25F /* RoutingExample */;
+			targetProxy = 6A61169724136AE50099C25F /* PBXContainerItemProxy */;
+		};
+		6AD8D5B324146A0F00889F2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AD8D5A624146A0F00889F2D /* AddToWishlistIntentUI */;
+			targetProxy = 6AD8D5B224146A0F00889F2D /* PBXContainerItemProxy */;
+		};
+		6AD8D5B624146A0F00889F2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AD8D59D24146A0F00889F2D /* AddToWishlistIntent */;
+			targetProxy = 6AD8D5B524146A0F00889F2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A61168E24136AE50099C25F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A61168F24136AE50099C25F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6AD8D5AE24146A0F00889F2D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AD8D5AF24146A0F00889F2D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A61169D24136AE50099C25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A61169E24136AE50099C25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A6116A024136AE50099C25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LT888MY4H;
+				INFOPLIST_FILE = RoutingExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassiuspacheco.RoutingExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A6116A124136AE50099C25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LT888MY4H;
+				INFOPLIST_FILE = RoutingExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassiuspacheco.RoutingExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6A6116A324136AE50099C25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LT888MY4H;
+				INFOPLIST_FILE = RoutingExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassiuspacheco.RoutingExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoutingExample.app/RoutingExample";
+			};
+			name = Debug;
+		};
+		6A6116A424136AE50099C25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LT888MY4H;
+				INFOPLIST_FILE = RoutingExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassiuspacheco.RoutingExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoutingExample.app/RoutingExample";
+			};
+			name = Release;
+		};
+		6AD8D5B924146A0F00889F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LT888MY4H;
+				INFOPLIST_FILE = AddToWishlistIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassiuspacheco.RoutingExample.AddToWishlistIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6AD8D5BA24146A0F00889F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LT888MY4H;
+				INFOPLIST_FILE = AddToWishlistIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassiuspacheco.RoutingExample.AddToWishlistIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6AD8D5BC24146A0F00889F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LT888MY4H;
+				INFOPLIST_FILE = AddToWishlistIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassiuspacheco.RoutingExample.AddToWishlistIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6AD8D5BD24146A0F00889F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LT888MY4H;
+				INFOPLIST_FILE = AddToWishlistIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassiuspacheco.RoutingExample.AddToWishlistIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A61167924136AE30099C25F /* Build configuration list for PBXProject "RoutingExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A61169D24136AE50099C25F /* Debug */,
+				6A61169E24136AE50099C25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A61169F24136AE50099C25F /* Build configuration list for PBXNativeTarget "RoutingExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A6116A024136AE50099C25F /* Debug */,
+				6A6116A124136AE50099C25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A6116A224136AE50099C25F /* Build configuration list for PBXNativeTarget "RoutingExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A6116A324136AE50099C25F /* Debug */,
+				6A6116A424136AE50099C25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AD8D5B824146A0F00889F2D /* Build configuration list for PBXNativeTarget "AddToWishlistIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AD8D5B924146A0F00889F2D /* Debug */,
+				6AD8D5BA24146A0F00889F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AD8D5BB24146A0F00889F2D /* Build configuration list for PBXNativeTarget "AddToWishlistIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AD8D5BC24146A0F00889F2D /* Debug */,
+				6AD8D5BD24146A0F00889F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A61167624136AE30099C25F /* Project object */;
+}
