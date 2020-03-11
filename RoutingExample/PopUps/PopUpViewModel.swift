@@ -8,7 +8,13 @@
 
 import Foundation
 
-final class PopUpViewModel {
+protocol PopUpViewModelInterface {
+    var message: String { get }
+
+    func dismissButtonTouchUpInside()
+}
+
+final class PopUpViewModel: PopUpViewModelInterface {
     typealias Routes = Closable
     private let router: Routes
     let message: String

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DependencyContainer
 
 protocol WishlistTabRoute {
     func makeWishlistTab() -> UIViewController
@@ -15,8 +16,18 @@ protocol WishlistTabRoute {
 extension WishlistTabRoute where Self: Router {
     func makeWishlistTab() -> UIViewController {
         // No transitions since these are managed by the TabBarController
-        let router = DefaultRouter(rootTransition: EmptyTransition())
-        let viewModel = WishlistViewModel(router: router)
+        // Passing the current Router's container into the newly created Router below.
+        let router = DefaultRouter(rootTransition: EmptyTransition(), container: container)
+
+        // The WishlistViewModelInterface was registered expecting an argument of the
+        // type WishlistViewModel.Routes. Even though DefaultRouter conforms to it,
+        // ultimately it is of a different type, so we need to erase its type.
+        let routes = router as WishlistViewModel.Routes
+
+        // Resolve the dependency by returning an instance that conforms to
+        // WishlistViewModelInterface. That may be a real or mock instance.
+        // This is registered in the DependencyGraph.swift.
+        let viewModel = container.resolve(WishlistViewModelInterface.self, argument: routes)
         let viewController = WishlistViewController(viewModel: viewModel)
         router.root = viewController
 

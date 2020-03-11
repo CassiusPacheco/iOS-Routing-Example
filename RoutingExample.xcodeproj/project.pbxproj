@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A10678A241CDA3B00844681 /* WishlistTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A106788241CDA3B00844681 /* WishlistTabRoute.swift */; };
-		6A10678B241CDA3B00844681 /* ShopTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A106789241CDA3B00844681 /* ShopTabRoute.swift */; };
+		6A46A76E2419052200ED7426 /* ShopTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46A76D2419052200ED7426 /* ShopTabRoute.swift */; };
+		6A46A770241905EB00ED7426 /* WishlistTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46A76F241905EB00ED7426 /* WishlistTabRoute.swift */; };
+		6A46A773241908F400ED7426 /* DependencyGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46A772241908F400ED7426 /* DependencyGraph.swift */; };
+		6A51EA05241DB801004FA2D0 /* DependencyContainer in Frameworks */ = {isa = PBXBuildFile; productRef = 6A51EA04241DB801004FA2D0 /* DependencyContainer */; };
 		6A61168224136AE30099C25F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61168124136AE30099C25F /* AppDelegate.swift */; };
 		6A61168424136AE30099C25F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61168324136AE30099C25F /* SceneDelegate.swift */; };
 		6A61168624136AE30099C25F /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61168524136AE30099C25F /* ShopViewController.swift */; };
@@ -102,8 +104,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6A106788241CDA3B00844681 /* WishlistTabRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistTabRoute.swift; sourceTree = "<group>"; };
-		6A106789241CDA3B00844681 /* ShopTabRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopTabRoute.swift; sourceTree = "<group>"; };
+		6A46A76D2419052200ED7426 /* ShopTabRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTabRoute.swift; sourceTree = "<group>"; };
+		6A46A76F241905EB00ED7426 /* WishlistTabRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistTabRoute.swift; sourceTree = "<group>"; };
+		6A46A772241908F400ED7426 /* DependencyGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyGraph.swift; sourceTree = "<group>"; };
 		6A61167E24136AE30099C25F /* RoutingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoutingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A61168124136AE30099C25F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A61168324136AE30099C25F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A51EA05241DB801004FA2D0 /* DependencyContainer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,11 +197,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6A106787241CDA3B00844681 /* Tabs */ = {
+		6A46A7712419085100ED7426 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				6A106788241CDA3B00844681 /* WishlistTabRoute.swift */,
-				6A106789241CDA3B00844681 /* ShopTabRoute.swift */,
+				6A46A76D2419052200ED7426 /* ShopTabRoute.swift */,
+				6A46A76F241905EB00ED7426 /* WishlistTabRoute.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -230,6 +234,7 @@
 			children = (
 				6A61169124136AE50099C25F /* Info.plist */,
 				6A61168124136AE30099C25F /* AppDelegate.swift */,
+				6A46A772241908F400ED7426 /* DependencyGraph.swift */,
 				6A61168324136AE30099C25F /* SceneDelegate.swift */,
 				6A61168C24136AE50099C25F /* Assets.xcassets */,
 				6A61168E24136AE50099C25F /* LaunchScreen.storyboard */,
@@ -338,7 +343,7 @@
 				6AD8D5782413B81C00889F2D /* ProductRoute.swift */,
 				6AD8D5702413853A00889F2D /* SignUpRoute.swift */,
 				6AD8D5982413F7AA00889F2D /* SiriRoute.swift */,
-				6A106787241CDA3B00844681 /* Tabs */,
+				6A46A7712419085100ED7426 /* Tabs */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -410,6 +415,9 @@
 				6AD8D5B624146A0F00889F2D /* PBXTargetDependency */,
 			);
 			name = RoutingExample;
+			packageProductDependencies = (
+				6A51EA04241DB801004FA2D0 /* DependencyContainer */,
+			);
 			productName = RoutingExample;
 			productReference = 6A61167E24136AE30099C25F /* RoutingExample.app */;
 			productType = "com.apple.product-type.application";
@@ -500,6 +508,9 @@
 				Base,
 			);
 			mainGroup = 6A61167524136AE30099C25F;
+			packageReferences = (
+				6A51EA03241DB801004FA2D0 /* XCRemoteSwiftPackageReference "DependencyContainer" */,
+			);
 			productRefGroup = 6A61167F24136AE30099C25F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -560,6 +571,7 @@
 				6AD8D58A2413D8C800889F2D /* ProductViewModel.swift in Sources */,
 				6A61168624136AE30099C25F /* ShopViewController.swift in Sources */,
 				6AD8D5722413853B00889F2D /* SignUpRoute.swift in Sources */,
+				6A46A773241908F400ED7426 /* DependencyGraph.swift in Sources */,
 				6AD8D57C2413D33D00889F2D /* DefaultRouter.swift in Sources */,
 				6AD8D5732413853B00889F2D /* LoginRoute.swift in Sources */,
 				6AD8D56B2413848700889F2D /* ModalTransition.swift in Sources */,
@@ -571,9 +583,10 @@
 				6AD8D56C2413848700889F2D /* Transition.swift in Sources */,
 				6A6116A624136C5C0099C25F /* MainTabBarController.swift in Sources */,
 				6A6116BD241372270099C25F /* LayoutHelper.swift in Sources */,
+				6A46A770241905EB00ED7426 /* WishlistTabRoute.swift in Sources */,
 				6AD8D5862413D73B00889F2D /* WishlistViewModel.swift in Sources */,
+				6A46A76E2419052200ED7426 /* ShopTabRoute.swift in Sources */,
 				6AD8D56D2413848700889F2D /* PushTransition.swift in Sources */,
-				6A10678A241CDA3B00844681 /* WishlistTabRoute.swift in Sources */,
 				6AD8D5992413F7AA00889F2D /* SiriRoute.swift in Sources */,
 				6AD8D5C82414BBAE00889F2D /* UIViewController.swift in Sources */,
 				6AD8D5752413B16300889F2D /* ForgottenPasswordRoute.swift in Sources */,
@@ -589,7 +602,6 @@
 				6AD8D5882413D83900889F2D /* PopUpViewModel.swift in Sources */,
 				6A61168424136AE30099C25F /* SceneDelegate.swift in Sources */,
 				6AD8D5772413B24000889F2D /* PopUpRoute.swift in Sources */,
-				6A10678B241CDA3B00844681 /* ShopTabRoute.swift in Sources */,
 				6A6116BF241372C70099C25F /* DefaultButton.swift in Sources */,
 				6AD8D5792413B81C00889F2D /* ProductRoute.swift in Sources */,
 			);
@@ -983,6 +995,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A51EA03241DB801004FA2D0 /* XCRemoteSwiftPackageReference "DependencyContainer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CassiusPacheco/DependencyContainer";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A51EA04241DB801004FA2D0 /* DependencyContainer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A51EA03241DB801004FA2D0 /* XCRemoteSwiftPackageReference "DependencyContainer" */;
+			productName = DependencyContainer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A61167624136AE30099C25F /* Project object */;
 }

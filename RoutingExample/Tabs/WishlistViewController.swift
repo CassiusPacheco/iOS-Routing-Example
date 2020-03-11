@@ -9,9 +9,9 @@
 import UIKit
 
 final class WishlistViewController: UIViewController {
-    private let viewModel: WishlistViewModel
+    private let viewModel: WishlistViewModelInterface
 
-    init(viewModel: WishlistViewModel) {
+    init(viewModel: WishlistViewModelInterface) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

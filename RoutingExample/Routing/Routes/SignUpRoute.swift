@@ -17,13 +17,18 @@ extension SignUpRoute where Self: Router {
     // internally by instances that conform to Router, like DefaultRouter,
     // DeeplinkRouter and others.
     func openSignUp(with transition: Transition) {
-        // If the `Router` makes use of a DI container it can resolve
-        // the dependencies in a clean and testable way by doing something like:
-        //
-        // let viewController = container.resolve(SignUpViewController.self, argument: router)
+        // Passing the current Router's container into the newly created Router below.
+        let router = DefaultRouter(rootTransition: transition, container: container)
 
-        let router = DefaultRouter(rootTransition: transition)
-        let viewModel = SignUpViewModel(router: router)
+        // The SignUpViewModelInterface was registered expecting an argument of the
+        // type SignUpViewModel.Routes. Even though DefaultRouter conforms to it,
+        // ultimately it is of a different type, so we need to erase its type.
+        let routes = router as SignUpViewModel.Routes
+
+        // Resolve the dependency by returning an instance that conforms to
+        // SignUpViewModelInterface. That may be a real or mock instance.
+        // This is registered in the DependencyGraph.swift.
+        let viewModel = container.resolve(SignUpViewModelInterface.self, argument: routes)
         let viewController = SignUpViewController(viewModel: viewModel)
         router.root = viewController
 

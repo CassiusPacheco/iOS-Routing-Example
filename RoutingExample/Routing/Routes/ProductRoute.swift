@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import DependencyContainer
 
 protocol ProductRoute {
     func openProduct()
@@ -17,13 +18,18 @@ extension ProductRoute where Self: Router {
     // internally by instances that conform to Router, like DefaultRouter,
     // DeeplinkRouter and others.
     func openProduct(with transition: Transition) {
-        // If the `Router` makes use of a DI container it can resolve
-        // the dependencies in a clean and testable way by doing something like:
-        //
-        // let viewController = container.resolve(ProductViewController.self, argument: router)
+        // Passing the current Router's container into the newly created Router below
+        let router = SiriRouter(rootTransition: transition, container: container)
 
-        let router = SiriRouter(rootTransition: transition)
-        let viewModel = ProductViewModel(router: router)
+        // The ProductViewModelInterface was registered expecting an argument of the
+        // type ProductViewModel.Routes. Even though DefaultRouter conforms to it,
+        // ultimately it is of a different type, so we need to erase its type.
+        let routes = router as ProductViewModel.Routes
+
+        // Resolve the dependency by returning an instance that conforms to
+        // ProductViewModelInterface. That may be a real or mock instance.
+        // This is registered in the DependencyGraph.swift.
+        let viewModel = container.resolve(ProductViewModelInterface.self, argument: routes)
         let viewController = ProductViewController(viewModel: viewModel)
         router.root = viewController
 

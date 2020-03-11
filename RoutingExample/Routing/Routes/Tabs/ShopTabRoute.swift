@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DependencyContainer
 
 protocol ShopTabRoute {
     func makeShopTab() -> UIViewController
@@ -15,8 +16,18 @@ protocol ShopTabRoute {
 extension ShopTabRoute where Self: Router {
     func makeShopTab() -> UIViewController {
         // No transitions since these are managed by the TabBarController
-        let router = DefaultRouter(rootTransition: EmptyTransition())
-        let viewModel = ShopViewModel(router: router)
+        // Passing the current Router's container into the newly created Router below.
+        let router = DefaultRouter(rootTransition: EmptyTransition(), container: container)
+
+        // The ShopViewModelInterface was registered expecting an argument of the
+        // type ShopViewModel.Routes. Even though DefaultRouter conforms to it,
+        // ultimately it is of a different type, so we need to erase its type.
+        let routes = router as ShopViewModel.Routes
+
+        // Resolve the dependency by returning an instance that conforms to
+        // ShopViewModelInterface. That may be a real or mock instance.
+        // This is registered in the DependencyGraph.swift.
+        let viewModel = container.resolve(ShopViewModelInterface.self, argument: routes)
         let viewControlle = ShopViewController(viewModel: viewModel)
         router.root = viewControlle
 
