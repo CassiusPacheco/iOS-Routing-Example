@@ -9,7 +9,14 @@
 import Foundation
 import IntentsUI
 
-final class ProductViewModel {
+protocol ProductViewModelInterface {
+    var siriButtonDelegate: INUIAddVoiceShortcutButtonDelegate { get }
+
+    func productButtonTouchUpInside()
+    func wishlistButtonTouchUpInside()
+}
+
+final class ProductViewModel: ProductViewModelInterface {
     typealias Routes = ProductRoute & PopUpRoute & SiriRoute
     private let router: Routes
 

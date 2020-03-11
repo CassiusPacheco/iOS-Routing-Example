@@ -22,8 +22,9 @@ extension PopUpRoute where Self: Router {
         //
         // let viewController = container.resolve(PopUpViewController.self, argument: router)
 
-        let router = DefaultRouter(rootTransition: transition)
-        let viewModel = PopUpViewModel(message: message, router: router)
+        let router = DefaultRouter(rootTransition: transition, container: container)
+        let routes = router as PopUpViewModel.Routes
+        let viewModel = container.resolve(PopUpViewModelInterface.self, arguments: message, routes)
         let viewController = PopUpViewController(viewModel: viewModel)
         router.root = viewController
 

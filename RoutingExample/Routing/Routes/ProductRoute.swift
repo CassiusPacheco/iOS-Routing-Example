@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import DependencyInjector
 
 protocol ProductRoute {
     func openProduct()
@@ -22,8 +23,9 @@ extension ProductRoute where Self: Router {
         //
         // let viewController = container.resolve(ProductViewController.self, argument: router)
 
-        let router = SiriRouter(rootTransition: transition)
-        let viewModel = ProductViewModel(router: router)
+        let router = SiriRouter(rootTransition: transition, container: container)
+        let routes = router as ProductViewModel.Routes
+        let viewModel = container.resolve(ProductViewModelInterface.self, argument: routes)
         let viewController = ProductViewController(viewModel: viewModel)
         router.root = viewController
 

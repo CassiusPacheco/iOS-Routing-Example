@@ -9,9 +9,9 @@
 import UIKit
 
 final class PopUpViewController: UIViewController {
-    private let viewModel: PopUpViewModel
+    private let viewModel: PopUpViewModelInterface
 
-    init(viewModel: PopUpViewModel) {
+    init(viewModel: PopUpViewModelInterface) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

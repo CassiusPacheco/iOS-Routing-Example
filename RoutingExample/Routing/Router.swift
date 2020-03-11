@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DependencyInjector
 
 protocol Closable: class {
     /// Closes the Router's root view controller using the transition used to show it.
@@ -50,5 +51,5 @@ protocol Router: Routable {
     // Dependency Injector Container example:
     // https://github.com/CassiusPacheco/DependencyInjector
     //
-    // var container: DependencyInjector { get }
+    var container: DependencyInjector { get }
 }

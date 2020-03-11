@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DependencyInjector",
+        "repositoryURL": "https://github.com/CassiusPacheco/DependencyInjector",
+        "state": {
+          "branch": null,
+          "revision": "cf978849610d3b47223305e513ab3fd507752e08",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

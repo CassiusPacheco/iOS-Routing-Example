@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import DependencyInjector
 
 protocol ForgottenPasswordRoute {
     func openForgottenPassword()
@@ -22,8 +23,9 @@ extension ForgottenPasswordRoute where Self: Router {
         //
         // let viewController = container.resolve(ForgottenPasswordViewController.self, argument: router)
 
-        let router = DefaultRouter(rootTransition: transition)
-        let viewModel = ForgottenPasswordViewModel(router: router)
+        let router = DefaultRouter(rootTransition: transition, container: container)
+        let routes = router as ForgottenPasswordViewModel.Routes
+        let viewModel = container.resolve(ForgottenPasswordViewModelInterface.self, argument: routes)
         let viewController = ForgottenPasswordViewController(viewModel: viewModel)
         router.root = viewController
 

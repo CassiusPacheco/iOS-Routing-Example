@@ -22,8 +22,9 @@ extension LoginRoute where Self: Router {
         //
         // let viewController = container.resolve(LoginViewController.self, argument: router)
 
-        let router = DefaultRouter(rootTransition: transition)
-        let viewModel = LoginViewModel(router: router)
+        let router = DefaultRouter(rootTransition: transition, container: container)
+        let routes = router as LoginViewModel.Routes
+        let viewModel = container.resolve(LoginViewModelInterface.self, argument: routes)
         let viewController = LoginViewController(viewModel: viewModel)
         let navigationController = UINavigationController(rootViewController: viewController)
         router.root = viewController

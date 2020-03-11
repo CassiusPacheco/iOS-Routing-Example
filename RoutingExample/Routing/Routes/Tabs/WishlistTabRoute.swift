@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DependencyInjector
 
 protocol WishlistTabRoute {
     func makeWishlistTab() -> UIViewController
@@ -15,8 +16,9 @@ protocol WishlistTabRoute {
 extension WishlistTabRoute where Self: Router {
     func makeWishlistTab() -> UIViewController {
         // No transitions since these are managed by the TabBarController
-        let router = DefaultRouter(rootTransition: EmptyTransition())
-        let viewModel = WishlistViewModel(router: router)
+        let router = DefaultRouter(rootTransition: EmptyTransition(), container: container)
+        let routes = router as WishlistViewModel.Routes
+        let viewModel = container.resolve(WishlistViewModelInterface.self, argument: routes)
         let viewController = WishlistViewController(viewModel: viewModel)
         router.root = viewController
 

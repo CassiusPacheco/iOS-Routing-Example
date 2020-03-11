@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import DependencyInjector
 
 class DefaultRouter: NSObject, Router, Closable, Dismissable {
     private let rootTransition: Transition
     weak var root: UIViewController?
+    var container: DependencyInjector
 
-    init(rootTransition: Transition) {
+    init(rootTransition: Transition, container: DependencyInjector) {
         self.rootTransition = rootTransition
+        self.container = container
     }
 
     deinit {

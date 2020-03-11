@@ -8,7 +8,12 @@
 
 import Foundation
 
-final class SignUpViewModel {
+protocol SignUpViewModelInterface {
+    func forgottenPasswordButtonTouchUpInside()
+    func dismissButtonTouchUpInside()
+}
+
+final class SignUpViewModel: SignUpViewModelInterface {
     typealias Routes = ForgottenPasswordRoute & Dismissable
     private var router: Routes
 
