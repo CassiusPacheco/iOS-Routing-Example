@@ -9,9 +9,9 @@
 import UIKit
 
 final class SignUpViewController: UIViewController {
-    private let viewModel: SignUpViewModel
+    private let viewModel: SignUpViewModelInterface
 
-    init(viewModel: SignUpViewModel) {
+    init(viewModel: SignUpViewModelInterface) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

@@ -22,8 +22,9 @@ extension SignUpRoute where Self: Router {
         //
         // let viewController = container.resolve(SignUpViewController.self, argument: router)
 
-        let router = DefaultRouter(rootTransition: transition)
-        let viewModel = SignUpViewModel(router: router)
+        let router = DefaultRouter(rootTransition: transition, container: container)
+        let routes = router as SignUpViewModel.Routes
+        let viewModel = container.resolve(SignUpViewModelInterface.self, argument: routes)
         let viewController = SignUpViewController(viewModel: viewModel)
         router.root = viewController
 

@@ -8,7 +8,11 @@
 
 import Foundation
 
-final class ForgottenPasswordViewModel {
+protocol ForgottenPasswordViewModelInterface {
+    func resetPasswordButtonTouchUpInside()
+}
+
+final class ForgottenPasswordViewModel: ForgottenPasswordViewModelInterface {
     typealias Routes = PopUpRoute
     private let router: Routes
 

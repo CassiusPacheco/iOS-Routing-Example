@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DependencyContainer
 
 protocol Closable: class {
     /// Closes the Router's root view controller using the transition used to show it.
@@ -47,8 +48,8 @@ protocol Router: Routable {
     // or something similar, in order to ensure the controllers and
     // view models instantiated by this class become testable.
     //
-    // Dependency Injector Container example:
-    // https://github.com/CassiusPacheco/DependencyInjector
+    // Dependency Container example:
+    // https://github.com/CassiusPacheco/DependencyContainer
     //
-    // var container: DependencyInjector { get }
+    var container: DependencyContainer { get }
 }

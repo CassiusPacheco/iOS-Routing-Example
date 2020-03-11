@@ -9,9 +9,9 @@
 import UIKit
 
 final class ShopViewController: UIViewController {
-    private let viewModel: ShopViewModel
+    private let viewModel: ShopViewModelInterface
 
-    init(viewModel: ShopViewModel) {
+    init(viewModel: ShopViewModelInterface) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

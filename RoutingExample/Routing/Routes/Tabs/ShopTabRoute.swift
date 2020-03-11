@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DependencyContainer
 
 protocol ShopTabRoute {
     func makeShopTab() -> UIViewController
@@ -15,8 +16,9 @@ protocol ShopTabRoute {
 extension ShopTabRoute where Self: Router {
     func makeShopTab() -> UIViewController {
         // No transitions since these are managed by the TabBarController
-        let router = DefaultRouter(rootTransition: EmptyTransition())
-        let viewModel = ShopViewModel(router: router)
+        let router = DefaultRouter(rootTransition: EmptyTransition(), container: container)
+        let routes = router as ShopViewModel.Routes
+        let viewModel = container.resolve(ShopViewModelInterface.self, argument: routes)
         let viewControlle = ShopViewController(viewModel: viewModel)
         router.root = viewControlle
 

@@ -9,9 +9,9 @@
 import UIKit
 
 final class ForgottenPasswordViewController: UIViewController {
-    private let viewModel: ForgottenPasswordViewModel
+    private let viewModel: ForgottenPasswordViewModelInterface
 
-    init(viewModel: ForgottenPasswordViewModel) {
+    init(viewModel: ForgottenPasswordViewModelInterface) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

@@ -8,7 +8,12 @@
 
 import Foundation
 
-final class WishlistViewModel {
+protocol WishlistViewModelInterface {
+    func productButtonTouchUpInside()
+    func loginButtonTouchUpInside()
+}
+
+final class WishlistViewModel: WishlistViewModelInterface {
     typealias Routes = LoginRoute & ProductRoute
     private let router: Routes
 

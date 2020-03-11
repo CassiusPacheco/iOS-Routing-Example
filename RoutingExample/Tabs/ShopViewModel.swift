@@ -8,7 +8,11 @@
 
 import Foundation
 
-final class ShopViewModel {
+protocol ShopViewModelInterface {
+    func productButtonTouchUpInside()
+}
+
+final class ShopViewModel: ShopViewModelInterface {
     typealias Routes = ProductRoute
     private let router: Routes
 
