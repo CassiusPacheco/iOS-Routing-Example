@@ -11,12 +11,28 @@
 		6A46A770241905EB00ED7426 /* WishlistTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46A76F241905EB00ED7426 /* WishlistTabRoute.swift */; };
 		6A46A773241908F400ED7426 /* DependencyGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46A772241908F400ED7426 /* DependencyGraph.swift */; };
 		6A51EA05241DB801004FA2D0 /* DependencyContainer in Frameworks */ = {isa = PBXBuildFile; productRef = 6A51EA04241DB801004FA2D0 /* DependencyContainer */; };
+		6A5E44F6241C9A7A001CA6C0 /* TransitionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E44F5241C9A7A001CA6C0 /* TransitionMock.swift */; };
+		6A5E44FE241C9CB0001CA6C0 /* DependencyContainerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E44FD241C9CB0001CA6C0 /* DependencyContainerMock.swift */; };
+		6A5E4501241C9D3B001CA6C0 /* LoginViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E4500241C9D3B001CA6C0 /* LoginViewModelMock.swift */; };
+		6A5E4503241C9DA1001CA6C0 /* ForgottenPasswordViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E4502241C9DA1001CA6C0 /* ForgottenPasswordViewModelMock.swift */; };
+		6A5E4505241C9E1F001CA6C0 /* SignUpViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E4504241C9E1F001CA6C0 /* SignUpViewModelMock.swift */; };
+		6A5E4507241C9E70001CA6C0 /* PopUpViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E4506241C9E70001CA6C0 /* PopUpViewModelMock.swift */; };
+		6A5E4509241C9EBC001CA6C0 /* ProductViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E4508241C9EBC001CA6C0 /* ProductViewModelMock.swift */; };
+		6A5E450C241C9F81001CA6C0 /* AddVoiceShortcutButtonDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E450B241C9F81001CA6C0 /* AddVoiceShortcutButtonDelegateMock.swift */; };
+		6A5E450E241C9FB7001CA6C0 /* ShopViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E450D241C9FB7001CA6C0 /* ShopViewModelMock.swift */; };
+		6A5E4510241C9FE7001CA6C0 /* WishlistViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E450F241C9FE6001CA6C0 /* WishlistViewModelMock.swift */; };
+		6A5E4513241CA1E6001CA6C0 /* LoginRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E4512241CA1E6001CA6C0 /* LoginRouteTests.swift */; };
+		6A5E4515241CA48E001CA6C0 /* RouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E4514241CA48E001CA6C0 /* RouterMock.swift */; };
+		6A5E4518241CAD67001CA6C0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E4517241CAD67001CA6C0 /* UIViewController.swift */; };
+		6A5E451A241CAEC7001CA6C0 /* PopUpRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E4519241CAEC7001CA6C0 /* PopUpRouteTests.swift */; };
+		6A5E451C241CAF97001CA6C0 /* ShopTabRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E451B241CAF97001CA6C0 /* ShopTabRouteTests.swift */; };
+		6A5E451E241CB002001CA6C0 /* WishlistTabRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E451D241CB002001CA6C0 /* WishlistTabRouteTests.swift */; };
+		6A5E4521241CB055001CA6C0 /* DefaultRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E4520241CB055001CA6C0 /* DefaultRouterTests.swift */; };
 		6A61168224136AE30099C25F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61168124136AE30099C25F /* AppDelegate.swift */; };
 		6A61168424136AE30099C25F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61168324136AE30099C25F /* SceneDelegate.swift */; };
 		6A61168624136AE30099C25F /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61168524136AE30099C25F /* ShopViewController.swift */; };
 		6A61168D24136AE50099C25F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A61168C24136AE50099C25F /* Assets.xcassets */; };
 		6A61169024136AE50099C25F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A61168E24136AE50099C25F /* LaunchScreen.storyboard */; };
-		6A61169B24136AE50099C25F /* RoutingExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A61169A24136AE50099C25F /* RoutingExampleTests.swift */; };
 		6A6116A624136C5C0099C25F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116A524136C5C0099C25F /* MainTabBarController.swift */; };
 		6A6116A824136EF30099C25F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116A724136EF30099C25F /* LoginViewController.swift */; };
 		6A6116AA24136EFE0099C25F /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116A924136EFE0099C25F /* ProductViewController.swift */; };
@@ -26,6 +42,19 @@
 		6A6116B924136FFD0099C25F /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116B824136FFD0099C25F /* WishlistViewController.swift */; };
 		6A6116BD241372270099C25F /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116BC241372270099C25F /* LayoutHelper.swift */; };
 		6A6116BF241372C70099C25F /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6116BE241372C70099C25F /* DefaultButton.swift */; };
+		6A79A72A241CB55B00CCED5C /* ViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79A729241CB55B00CCED5C /* ViewControllerMock.swift */; };
+		6A79A72C241CB67300CCED5C /* DeeplinkRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79A72B241CB67300CCED5C /* DeeplinkRouterTests.swift */; };
+		6A79A72E241CBC5900CCED5C /* ProductRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79A72D241CBC5900CCED5C /* ProductRouteTests.swift */; };
+		6A79A730241CBCB900CCED5C /* ForgottenPasswordRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79A72F241CBCB900CCED5C /* ForgottenPasswordRouteTests.swift */; };
+		6A79A732241CBD2F00CCED5C /* SignUpRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79A731241CBD2F00CCED5C /* SignUpRouteTests.swift */; };
+		6A79A735241CBDAB00CCED5C /* ShopViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79A734241CBDAB00CCED5C /* ShopViewModelTests.swift */; };
+		6A79A737241CBFD100CCED5C /* RoutesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79A736241CBFD100CCED5C /* RoutesMock.swift */; };
+		6A79A739241CC17C00CCED5C /* WishlistViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79A738241CC17C00CCED5C /* WishlistViewModelTests.swift */; };
+		6A79A73B241CC1A600CCED5C /* ProductViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79A73A241CC1A600CCED5C /* ProductViewModelTests.swift */; };
+		6A79A73D241CC23D00CCED5C /* PopUpViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79A73C241CC23D00CCED5C /* PopUpViewModelTests.swift */; };
+		6A79A73F241CC2EC00CCED5C /* SignUpViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79A73E241CC2EC00CCED5C /* SignUpViewModelTests.swift */; };
+		6A79A741241CC36F00CCED5C /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79A740241CC36F00CCED5C /* LoginViewModelTests.swift */; };
+		6A79A743241CC3B200CCED5C /* ForgottenPasswordViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79A742241CC3B200CCED5C /* ForgottenPasswordViewModelTests.swift */; };
 		6AD8D56A2413848700889F2D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5612413848700889F2D /* Router.swift */; };
 		6AD8D56B2413848700889F2D /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5632413848700889F2D /* ModalTransition.swift */; };
 		6AD8D56C2413848700889F2D /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD8D5642413848700889F2D /* Transition.swift */; };
@@ -107,6 +136,23 @@
 		6A46A76D2419052200ED7426 /* ShopTabRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTabRoute.swift; sourceTree = "<group>"; };
 		6A46A76F241905EB00ED7426 /* WishlistTabRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistTabRoute.swift; sourceTree = "<group>"; };
 		6A46A772241908F400ED7426 /* DependencyGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyGraph.swift; sourceTree = "<group>"; };
+		6A5E44F5241C9A7A001CA6C0 /* TransitionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionMock.swift; sourceTree = "<group>"; };
+		6A5E44FD241C9CB0001CA6C0 /* DependencyContainerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainerMock.swift; sourceTree = "<group>"; };
+		6A5E4500241C9D3B001CA6C0 /* LoginViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelMock.swift; sourceTree = "<group>"; };
+		6A5E4502241C9DA1001CA6C0 /* ForgottenPasswordViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenPasswordViewModelMock.swift; sourceTree = "<group>"; };
+		6A5E4504241C9E1F001CA6C0 /* SignUpViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModelMock.swift; sourceTree = "<group>"; };
+		6A5E4506241C9E70001CA6C0 /* PopUpViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewModelMock.swift; sourceTree = "<group>"; };
+		6A5E4508241C9EBC001CA6C0 /* ProductViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModelMock.swift; sourceTree = "<group>"; };
+		6A5E450B241C9F81001CA6C0 /* AddVoiceShortcutButtonDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVoiceShortcutButtonDelegateMock.swift; sourceTree = "<group>"; };
+		6A5E450D241C9FB7001CA6C0 /* ShopViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModelMock.swift; sourceTree = "<group>"; };
+		6A5E450F241C9FE6001CA6C0 /* WishlistViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewModelMock.swift; sourceTree = "<group>"; };
+		6A5E4512241CA1E6001CA6C0 /* LoginRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouteTests.swift; sourceTree = "<group>"; };
+		6A5E4514241CA48E001CA6C0 /* RouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMock.swift; sourceTree = "<group>"; };
+		6A5E4517241CAD67001CA6C0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		6A5E4519241CAEC7001CA6C0 /* PopUpRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpRouteTests.swift; sourceTree = "<group>"; };
+		6A5E451B241CAF97001CA6C0 /* ShopTabRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTabRouteTests.swift; sourceTree = "<group>"; };
+		6A5E451D241CB002001CA6C0 /* WishlistTabRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistTabRouteTests.swift; sourceTree = "<group>"; };
+		6A5E4520241CB055001CA6C0 /* DefaultRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRouterTests.swift; sourceTree = "<group>"; };
 		6A61167E24136AE30099C25F /* RoutingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoutingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A61168124136AE30099C25F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A61168324136AE30099C25F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,7 +161,6 @@
 		6A61168F24136AE50099C25F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A61169124136AE50099C25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A61169624136AE50099C25F /* RoutingExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A61169A24136AE50099C25F /* RoutingExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingExampleTests.swift; sourceTree = "<group>"; };
 		6A61169C24136AE50099C25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A6116A524136C5C0099C25F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		6A6116A724136EF30099C25F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +171,19 @@
 		6A6116B824136FFD0099C25F /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
 		6A6116BC241372270099C25F /* LayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutHelper.swift; sourceTree = "<group>"; };
 		6A6116BE241372C70099C25F /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		6A79A729241CB55B00CCED5C /* ViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMock.swift; sourceTree = "<group>"; };
+		6A79A72B241CB67300CCED5C /* DeeplinkRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkRouterTests.swift; sourceTree = "<group>"; };
+		6A79A72D241CBC5900CCED5C /* ProductRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRouteTests.swift; sourceTree = "<group>"; };
+		6A79A72F241CBCB900CCED5C /* ForgottenPasswordRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenPasswordRouteTests.swift; sourceTree = "<group>"; };
+		6A79A731241CBD2F00CCED5C /* SignUpRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouteTests.swift; sourceTree = "<group>"; };
+		6A79A734241CBDAB00CCED5C /* ShopViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModelTests.swift; sourceTree = "<group>"; };
+		6A79A736241CBFD100CCED5C /* RoutesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesMock.swift; sourceTree = "<group>"; };
+		6A79A738241CC17C00CCED5C /* WishlistViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewModelTests.swift; sourceTree = "<group>"; };
+		6A79A73A241CC1A600CCED5C /* ProductViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModelTests.swift; sourceTree = "<group>"; };
+		6A79A73C241CC23D00CCED5C /* PopUpViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewModelTests.swift; sourceTree = "<group>"; };
+		6A79A73E241CC2EC00CCED5C /* SignUpViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModelTests.swift; sourceTree = "<group>"; };
+		6A79A740241CC36F00CCED5C /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		6A79A742241CC3B200CCED5C /* ForgottenPasswordViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenPasswordViewModelTests.swift; sourceTree = "<group>"; };
 		6AD8D5612413848700889F2D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		6AD8D5632413848700889F2D /* ModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
 		6AD8D5642413848700889F2D /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
@@ -206,6 +264,90 @@
 			path = Tabs;
 			sourceTree = "<group>";
 		};
+		6A5E44E2241C95DA001CA6C0 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6A5E4514241CA48E001CA6C0 /* RouterMock.swift */,
+				6A79A736241CBFD100CCED5C /* RoutesMock.swift */,
+				6A5E450A241C9F78001CA6C0 /* Others */,
+				6A5E44F4241C9A6E001CA6C0 /* Transitions */,
+				6A5E44FF241C9D2E001CA6C0 /* ViewModels */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		6A5E44F4241C9A6E001CA6C0 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				6A5E44F5241C9A7A001CA6C0 /* TransitionMock.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		6A5E44FC241C9C98001CA6C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A5E44FD241C9CB0001CA6C0 /* DependencyContainerMock.swift */,
+				6A5E4516241CAD59001CA6C0 /* Extensions */,
+				6A5E44E2241C95DA001CA6C0 /* Mocks */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A5E44FF241C9D2E001CA6C0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6A5E4500241C9D3B001CA6C0 /* LoginViewModelMock.swift */,
+				6A5E4502241C9DA1001CA6C0 /* ForgottenPasswordViewModelMock.swift */,
+				6A5E4504241C9E1F001CA6C0 /* SignUpViewModelMock.swift */,
+				6A5E4506241C9E70001CA6C0 /* PopUpViewModelMock.swift */,
+				6A5E4508241C9EBC001CA6C0 /* ProductViewModelMock.swift */,
+				6A5E450D241C9FB7001CA6C0 /* ShopViewModelMock.swift */,
+				6A5E450F241C9FE6001CA6C0 /* WishlistViewModelMock.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6A5E450A241C9F78001CA6C0 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				6A5E450B241C9F81001CA6C0 /* AddVoiceShortcutButtonDelegateMock.swift */,
+				6A79A729241CB55B00CCED5C /* ViewControllerMock.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		6A5E4511241CA1D6001CA6C0 /* Routes Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6A79A72F241CBCB900CCED5C /* ForgottenPasswordRouteTests.swift */,
+				6A5E4512241CA1E6001CA6C0 /* LoginRouteTests.swift */,
+				6A5E4519241CAEC7001CA6C0 /* PopUpRouteTests.swift */,
+				6A79A72D241CBC5900CCED5C /* ProductRouteTests.swift */,
+				6A5E451B241CAF97001CA6C0 /* ShopTabRouteTests.swift */,
+				6A79A731241CBD2F00CCED5C /* SignUpRouteTests.swift */,
+				6A5E451D241CB002001CA6C0 /* WishlistTabRouteTests.swift */,
+			);
+			path = "Routes Tests";
+			sourceTree = "<group>";
+		};
+		6A5E4516241CAD59001CA6C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6A5E4517241CAD67001CA6C0 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6A5E451F241CB047001CA6C0 /* Routers Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6A5E4520241CB055001CA6C0 /* DefaultRouterTests.swift */,
+				6A79A72B241CB67300CCED5C /* DeeplinkRouterTests.swift */,
+			);
+			path = "Routers Tests";
+			sourceTree = "<group>";
+		};
 		6A61167524136AE30099C25F = {
 			isa = PBXGroup;
 			children = (
@@ -251,8 +393,11 @@
 		6A61169924136AE50099C25F /* RoutingExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				6A61169A24136AE50099C25F /* RoutingExampleTests.swift */,
 				6A61169C24136AE50099C25F /* Info.plist */,
+				6A5E451F241CB047001CA6C0 /* Routers Tests */,
+				6A5E4511241CA1D6001CA6C0 /* Routes Tests */,
+				6A5E44FC241C9C98001CA6C0 /* Supporting Files */,
+				6A79A733241CBD9700CCED5C /* ViewModels Tests */,
 			);
 			path = RoutingExampleTests;
 			sourceTree = "<group>";
@@ -308,6 +453,20 @@
 				6AD8D5C72414BBAE00889F2D /* UIViewController.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		6A79A733241CBD9700CCED5C /* ViewModels Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6A79A742241CC3B200CCED5C /* ForgottenPasswordViewModelTests.swift */,
+				6A79A740241CC36F00CCED5C /* LoginViewModelTests.swift */,
+				6A79A73C241CC23D00CCED5C /* PopUpViewModelTests.swift */,
+				6A79A73A241CC1A600CCED5C /* ProductViewModelTests.swift */,
+				6A79A734241CBDAB00CCED5C /* ShopViewModelTests.swift */,
+				6A79A73E241CC2EC00CCED5C /* SignUpViewModelTests.swift */,
+				6A79A738241CC17C00CCED5C /* WishlistViewModelTests.swift */,
+			);
+			path = "ViewModels Tests";
 			sourceTree = "<group>";
 		};
 		6AD8D55F2413848700889F2D /* Routing */ = {
@@ -611,7 +770,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A61169B24136AE50099C25F /* RoutingExampleTests.swift in Sources */,
+				6A79A741241CC36F00CCED5C /* LoginViewModelTests.swift in Sources */,
+				6A79A730241CBCB900CCED5C /* ForgottenPasswordRouteTests.swift in Sources */,
+				6A79A732241CBD2F00CCED5C /* SignUpRouteTests.swift in Sources */,
+				6A5E44FE241C9CB0001CA6C0 /* DependencyContainerMock.swift in Sources */,
+				6A5E4509241C9EBC001CA6C0 /* ProductViewModelMock.swift in Sources */,
+				6A5E450E241C9FB7001CA6C0 /* ShopViewModelMock.swift in Sources */,
+				6A5E4501241C9D3B001CA6C0 /* LoginViewModelMock.swift in Sources */,
+				6A5E450C241C9F81001CA6C0 /* AddVoiceShortcutButtonDelegateMock.swift in Sources */,
+				6A79A73D241CC23D00CCED5C /* PopUpViewModelTests.swift in Sources */,
+				6A79A739241CC17C00CCED5C /* WishlistViewModelTests.swift in Sources */,
+				6A5E44F6241C9A7A001CA6C0 /* TransitionMock.swift in Sources */,
+				6A79A735241CBDAB00CCED5C /* ShopViewModelTests.swift in Sources */,
+				6A5E451E241CB002001CA6C0 /* WishlistTabRouteTests.swift in Sources */,
+				6A5E4515241CA48E001CA6C0 /* RouterMock.swift in Sources */,
+				6A79A72A241CB55B00CCED5C /* ViewControllerMock.swift in Sources */,
+				6A79A72E241CBC5900CCED5C /* ProductRouteTests.swift in Sources */,
+				6A5E4513241CA1E6001CA6C0 /* LoginRouteTests.swift in Sources */,
+				6A5E451C241CAF97001CA6C0 /* ShopTabRouteTests.swift in Sources */,
+				6A79A73F241CC2EC00CCED5C /* SignUpViewModelTests.swift in Sources */,
+				6A79A72C241CB67300CCED5C /* DeeplinkRouterTests.swift in Sources */,
+				6A5E4505241C9E1F001CA6C0 /* SignUpViewModelMock.swift in Sources */,
+				6A5E4518241CAD67001CA6C0 /* UIViewController.swift in Sources */,
+				6A5E4503241C9DA1001CA6C0 /* ForgottenPasswordViewModelMock.swift in Sources */,
+				6A5E4521241CB055001CA6C0 /* DefaultRouterTests.swift in Sources */,
+				6A5E4510241C9FE7001CA6C0 /* WishlistViewModelMock.swift in Sources */,
+				6A79A73B241CC1A600CCED5C /* ProductViewModelTests.swift in Sources */,
+				6A79A743241CC3B200CCED5C /* ForgottenPasswordViewModelTests.swift in Sources */,
+				6A5E451A241CAEC7001CA6C0 /* PopUpRouteTests.swift in Sources */,
+				6A5E4507241C9E70001CA6C0 /* PopUpViewModelMock.swift in Sources */,
+				6A79A737241CBFD100CCED5C /* RoutesMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
