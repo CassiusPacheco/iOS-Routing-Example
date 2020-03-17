@@ -8,7 +8,13 @@
 
 import Foundation
 
-final class LoginViewModel {
+protocol LoginViewModelInterface {
+    func dismissButtonTouchUpInside()
+    func forgottenPasswordButtonTouchUpInside()
+    func signUpButtonTouchUpInside()
+}
+
+final class LoginViewModel: LoginViewModelInterface {
     typealias Routes = LoginRoute & SignUpRoute & ForgottenPasswordRoute & Closable
     private var router: Routes
 

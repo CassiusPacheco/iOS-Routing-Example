@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import DependencyContainer
 
 protocol ForgottenPasswordRoute {
     func openForgottenPassword()
@@ -17,13 +18,18 @@ extension ForgottenPasswordRoute where Self: Router {
     // internally by instances that conform to Router, like DefaultRouter,
     // DeeplinkRouter and others.
     func openForgottenPassword(with transition: Transition) {
-        // If the `Router` makes use of a DI container it can resolve
-        // the dependencies in a clean and testable way by doing something like:
-        //
-        // let viewController = container.resolve(ForgottenPasswordViewController.self, argument: router)
+        // Passing the current Router's container into the newly created Router below
+        let router = DefaultRouter(rootTransition: transition, container: container)
 
-        let router = DefaultRouter(rootTransition: transition)
-        let viewModel = ForgottenPasswordViewModel(router: router)
+        // The ForgottenPasswordViewModelInterface was registered expecting an argument of the
+        // type ForgottenPasswordViewModel.Routes. Even though DefaultRouter conforms to it,
+        // ultimately it is of a different type, so we need to erase its type.
+        let routes = router as ForgottenPasswordViewModel.Routes
+
+        // Resolve the dependency by returning an instance that conforms to
+        // ForgottenPasswordViewModelInterface. That may be a real or mock instance.
+        // This is registered in the DependencyGraph.swift.
+        let viewModel = container.resolve(ForgottenPasswordViewModelInterface.self, argument: routes)
         let viewController = ForgottenPasswordViewController(viewModel: viewModel)
         router.root = viewController
 

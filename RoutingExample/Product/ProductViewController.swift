@@ -10,9 +10,9 @@ import UIKit
 import IntentsUI
 
 final class ProductViewController: UIViewController {
-    private let viewModel: ProductViewModel
+    private let viewModel: ProductViewModelInterface
 
-    init(viewModel: ProductViewModel) {
+    init(viewModel: ProductViewModelInterface) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

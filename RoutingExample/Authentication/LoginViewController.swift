@@ -9,9 +9,9 @@
 import UIKit
 
 final class LoginViewController: UIViewController {
-    private let viewModel: LoginViewModel
+    private let viewModel: LoginViewModelInterface
 
-    init(viewModel: LoginViewModel) {
+    init(viewModel: LoginViewModelInterface) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
